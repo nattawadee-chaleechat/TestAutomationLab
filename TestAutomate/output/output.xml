@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-12-24T18:11:39.566351" rpa="false" schemaversion="5">
+<suite id="s1" name="Fail register" source="D:\kku\software en\lab4\TestAutomationLab\TestAutomate\Fail_register.robot">
+<test id="s1-t1" name="Invalid Phone Number" line="64">
+<kw name="Open Workshop Registration Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:39.856890" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<arg>${SERVER}/Registration.html</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-24T18:11:39.856890" elapsed="1.564913"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-24T18:11:41.422314" elapsed="0.001012"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:43.451470" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-24T18:11:41.423326" elapsed="2.028144"/>
+</kw>
+<doc>Open the Registration.html page in Chrome</doc>
+<status status="PASS" start="2025-12-24T18:11:39.855887" elapsed="3.596092"/>
+</kw>
+<kw name="Input firstname" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:43.452996" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<arg>id:firstname</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T18:11:43.452996" elapsed="3.138805"/>
+</kw>
+<arg>Somyod</arg>
+<status status="PASS" start="2025-12-24T18:11:43.451979" elapsed="3.139822"/>
+</kw>
+<kw name="Input lastname" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:46.593829" level="INFO">Typing text 'Sodsai' into text field 'id:lastname'.</msg>
+<arg>id:lastname</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T18:11:46.593829" elapsed="3.099322"/>
+</kw>
+<arg>Sodsai</arg>
+<status status="PASS" start="2025-12-24T18:11:46.592824" elapsed="3.100327"/>
+</kw>
+<kw name="Input organization" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:49.695178" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
+<arg>id:organization</arg>
+<arg>${organization}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T18:11:49.694183" elapsed="3.104658"/>
+</kw>
+<arg>CS KKU</arg>
+<status status="PASS" start="2025-12-24T18:11:49.694183" elapsed="3.104658"/>
+</kw>
+<kw name="Input email" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:52.799869" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T18:11:52.798841" elapsed="3.143646"/>
+</kw>
+<arg>somyod@kkumail.com</arg>
+<status status="PASS" start="2025-12-24T18:11:52.798841" elapsed="3.143646"/>
+</kw>
+<kw name="Input phone" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:55.945051" level="INFO">Typing text '1234' into text field 'id:phone'.</msg>
+<arg>id:phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T18:11:55.944544" elapsed="3.098282"/>
+</kw>
+<arg>1234</arg>
+<status status="PASS" start="2025-12-24T18:11:55.943574" elapsed="3.099252"/>
+</kw>
+<kw name="Submit Registration" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:11:59.044057" level="INFO">Clicking button 'id:registerButton'.</msg>
+<arg>id:registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T18:11:59.044057" elapsed="3.093487"/>
+</kw>
+<status status="PASS" start="2025-12-24T18:11:59.042826" elapsed="3.094718"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-24T18:12:07.271546" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-24T18:12:07.271546" level="FAIL">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</msg>
+<arg>Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-12-24T18:12:02.138401" elapsed="5.135147">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>Invalid_Phone_Number.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-12-24T18:12:07.273548" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Page" owner="resource">
+<doc>Close the browser after test</doc>
+<status status="NOT RUN" start="2025-12-24T18:12:07.274546" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-12-24T18:11:39.854882" elapsed="27.419664">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</status>
+</test>
+<doc>A test suite with a single test for Invalid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" start="2025-12-24T18:11:39.568340" elapsed="27.707205"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Fail register" id="s1" pass="0" fail="1" skip="0">Fail register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
